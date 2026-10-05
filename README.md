@@ -1,59 +1,100 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 🏪 Tindahan
 
-## About Laravel
+### Store Management System for Sari-Sari Stores & Small Businesses
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Track your **inventory, sales, utang, GCash, and e-load** transactions, all in one clean dashboard.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Livewire](https://img.shields.io/badge/Livewire-FB70A9?style=for-the-badge&logo=livewire&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+</div>
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 📖 About
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+**Tindahan** is a web-based store management system built for small retail businesses. It replaces the notebook and calculator with one place to manage products, record sales, monitor customer debts (utang), and log GCash and e-load transactions, with live totals so you always know how your store is doing.
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## ✨ Features
 
-### Premium Partners
+### 📊 Dashboard
+- Real-time overview of sales, inventory, and store activity
+- Key performance cards with live data
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 📦 Product & Inventory Management
+- ➕ Add, ✏️ edit, and 🗑️ delete products
+- 🖼️ Product photo upload with live preview
+- 🔖 SKU / barcode and category support
+- 💰 Cost price and selling price tracking
+- 📉 Stock level badges: **In stock**, **Low stock**, **Out of stock**
+- ⏳ Expiration date tracking with **Expired** and **Expiring soon** warnings
+- 🔍 Live search by name or SKU
+- 📄 Paginated product table
+- 📈 Live summary cards:
+  - **Total Value** (selling price × stock)
+  - **Total Cost / COGS** (cost price × stock)
+  - **Out-of-stock count**
+  - **Net Profit & Margin**
 
-## Contributing
+### 🧾 Sales
+- Record sales with itemized line items
+- Sales history tied to products
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 📝 Utang (Debt) Management
+- Track customer debts and balances
+- Add and edit records through a modal form
+- Status badges and summary KPI cards
 
-## Code of Conduct
+### 💸 GCash Management
+- Record **Cash In** and **Cash Out** transactions
+- Track customer name, phone number, amount, service fee, and reference number
+- Status tracking: ⏳ Pending, ✅ Completed, ❌ Failed
+- Notes for each transaction
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 📱 E-Load
+- Log mobile load transactions
 
-## Security Vulnerabilities
+### 🔔 Notifications & UX
+- Toast notifications for success and error messages
+- Confirmation prompts before deleting
+- Fully responsive layout with sidebar navigation (desktop, tablet, mobile)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 🛠️ Tech Stack
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| Layer | Technology |
+|-------|------------|
+| 🔧 **Backend** | [Laravel 12](https://laravel.com) · PHP 8.2+ |
+| ⚡ **Frontend / Reactivity** | [Livewire](https://livewire.laravel.com) (single-file components) · Blade |
+| 🎨 **Styling** | [Tailwind CSS](https://tailwindcss.com) |
+| 🖼️ **Icons** | [Lucide Icons](https://lucide.dev) via Blade Icons |
+| 🗄️ **Database** | MySQL |
+| 📦 **Package Managers** | Composer · npm |
+| 🧱 **Build Tool** | Vite |
+
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- 🐘 PHP 8.2 or higher
+- 🎼 Composer
+- 🟢 Node.js & npm
+- 🗄️ MySQL
+
+
+<div align="center">
+
+Made with ❤️ using Laravel & Livewire
+
+⭐ Star this repo if you find it useful!
+
+</div>
